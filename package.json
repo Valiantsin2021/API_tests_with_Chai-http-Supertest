@@ -7,7 +7,7 @@
   "scripts": {
     "pretest": "rimraf ./allure-report && rimraf allure-results",
     "test": "mocha ./test/test.spec.js --reporter mocha-multi-reporters --reporter-options configFile=config.json",
-    "posttest": "npx allure generate allure-results --clean -o allure-report && node ./node_modules/allure-single-html-file-js/combine.js ./allure-report",
+    "posttest": "npx allure generate allure-results --clean -o allure-report",
     "format": "prettier --write ./test/**/*.js",
     "lint": "eslint ./test/**/*.js"
   },
