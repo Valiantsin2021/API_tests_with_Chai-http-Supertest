@@ -1,4 +1,8 @@
 name: Playwright Tests
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  URL: ${{ secrets.github.URL}}
+  TOKEN: ${{ secrets.github.TOKEN}}
 on:
   push:
     branches: [main, master]
@@ -18,11 +22,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Run API tests
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          URL: ${{ secrets.github.URL}}
-          TOKEN: ${{ secrets.github.TOKEN}}
-        run: npm run test
+        run: URL=$URL TOKEN=$TOKEN npm run test
       - uses: actions/upload-artifact@v3
         if: always()
         with:
