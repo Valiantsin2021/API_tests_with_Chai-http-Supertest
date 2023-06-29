@@ -1,0 +1,1 @@
+{"total":2,"items":[{"uid":"fcfd89ea1099ed4552a019f2475699c0","name":"Chai-http test gorest API","statistic":{"failed":0,"broken":0,"skipped":0,"passed":7,"unknown":0,"total":7}},{"uid":"22734108c3988462bd19b46c5c9c1b95","name":"Supertest gorest API","statistic":{"failed":0,"broken":0,"skipped":0,"passed":7,"unknown":0,"total":7}}]}
