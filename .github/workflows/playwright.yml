@@ -18,7 +18,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Run API tests
-        run: URL=${{ secrets.github.URL}} TOKEN=${{ secrets.github.TOKEN}} npm run test
+        run: URL=${{ secrets.URL}} TOKEN=${{ secrets.TOKEN}} npm run test
       - uses: actions/upload-artifact@v3
         if: always()
         with:
