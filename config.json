@@ -1,0 +1,9 @@
+{
+  "reporterEnabled": "spec, mocha-junit-reporter, mocha-allure-reporter",
+  "mochaJunitReporterReporterOptions": {
+    "mochaFile": "./junit/junit.[hash].xml"
+  },
+  "mochaAllureReporterOptions": {
+    "targetDir": "./allure-results"
+  }
+}

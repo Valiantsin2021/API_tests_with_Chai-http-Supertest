@@ -1,0 +1,28 @@
+// This config file contains Mocha's defaults.
+// You can provide this same configuration in the `mocha` property of your
+// project's `package.json`.
+{
+  "diff": true,
+  "extension": ["js", "cjs", "mjs"],
+  "package": "./package.json",
+  "reporter": "spec",
+  "slow": "800",
+  "timeout": "10000",
+  "spec": "./test/**/*.spec.js",
+  "inline-diffs ": true,
+  "recursive": true,
+  "exit": true,
+  "ui": "bdd",
+  "retries": 3,
+  "ignore": [
+    "node_modules",
+    "dist",
+    "swaggers",
+    "seeds",
+    "migrations",
+    ".devcontainer",
+    ".vscode"
+  ],
+  "watch-files": ["lib/**/*.js", "test/**/*.js"],
+  "watch-ignore": ["lib/vendor"]
+}
